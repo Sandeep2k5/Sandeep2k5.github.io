@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><Sandeep-Portfolio></Sandeep-Portfolio></title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="https://kit.fontawesome.com/cac00eec35.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <nav>
+          <img src = "" class="logo">
+          <ul>
+           <li><a href="#about">About</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact-info">Contact</a></li>
+          </ul>
+        </nav>
+    </footer><br>
+    <br>
+    <br>
+      <div class ="boxx">
+        <h2 class="title1">Sandeep Uthayakumar</h2>
+        <p class="akl">Frontend-Developer</p>
+      </div>
+  </header>
+
+  <div id="about">
+        <div class ="row">
+          <div class = "about-col-1">
+          <img src ="Profile.jpeg">
+        </div>
+        <div class = "about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm Sandeep, a passionate software developer with a strong foundation in Java, Python and in MERN Stack. My journey through internships and personal projects has developed my ability to build scalable applications, design efficient systems, and contribute to the entire software development lifecycle. I’m always eager to learn new technologies and solve complex problems</p>
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">Technical Proficiency</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab",id="skills">
+            <ul>
+                <li><span>Languages</span><br>C,JAVA,PYTHON,HTML, CSS, JavaScript</li>
+                <li><span>Software’s</span><br>IntelliJ IDEA, Git, MySQL,MongoDB</li>
+                <li><span>Frameworks</span><br>React, Express, NodeJS, TensorFlow, PyTorch</li>
+            </ul> 
+          </div>
+        <div class="tab-contents"id ="Education"><ul>
+          <li><span>2022-2026</span><br> Bachelor of Technology<br>
+            Discipline: Computer Science<br>
+            National Institute of Technology, Puducherry<br>
+            CGPA – 7.91/10</li>
+          <li><span>2020 - 2022</span><br>Grade 12, CBSE<br>
+            Aditya Vidyashram Gurugram, India <br>
+            Score – 85.8 %</li>
+          <li><span>2018 - 2020</span><br>Grade 10, CBSE<br>
+            Amrita Vidyalayam, India <br>
+            Score – 91.4 %</li>
+        </ul></div>
+        </div>
+    </div>
+  </section>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list" id ="projects">
+        <div class="work">
+          <img src ="OIP.jpg">
+          <div class="layer">
+            <h3>Simulation of cryptocurrency using Blockchain</h3>
+            <p>Built a Python-based cryptocurrency wallet using blockchain integration 
+              with PyQt5 for GUI, featuring account creation, balance viewing, and 
+              transaction capabilities </p>
+              <a href="https://github.com/Sandeep2k5/Cryptocurreny-Wallet"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src ="react.jpg">
+          <div class="layer">
+            <h3> ToDO - app</h3>
+            <p>Built a Todo application which is having the CRUD Properties where it is using MongoDB for storage purpose and Express for backend commnunication</p>
+              <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="contact-section" id = "contact-info"> 
+    <h2 style="size: 45px;">Contact Me</h2>
+    <div class="contact-info">
+      <p>Mobile Number</p>
+      <p>+91 6374 899 340</p>
+
+      <p>Email</p>
+      <p>sandeeputhayakumar@gmail.com</p>
+
+      <p>Social Network</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/sandeep-uthayakumar-8b7242255/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Sandeep2k5"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/Sandeep2k5/"><i class="fa-solid fa-code"></i></a>
+      </div>   
+
+    </div>
+  </section>
+
+  <script >
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     
+    }</script>
+
+</body>
+</html>
